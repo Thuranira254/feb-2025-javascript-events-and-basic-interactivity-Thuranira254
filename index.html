@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleMart - E-Commerce Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to StyleMart</h1>
+  </header>
+
+  <main>
+    <!-- Button for Event Handling -->
+    <section id="colorSection">
+      <h2>Interactive Background</h2>
+      <button id="colorButton" class="btn btn-primary">Click Me to Change Background Color</button>
+    </section>
+
+    <!-- Image Gallery -->
+    <section id="gallery">
+      <h2>Product Gallery</h2>
+      <div class="gallery-container">
+        <button id="prevImage" class="btn btn-secondary">Previous</button>
+        <img id="galleryImage" src="images/Trenchcoats.jpeg" alt="Product Image">
+        <button id="nextImage" class="btn btn-secondary">Next</button>
+      </div>
+    </section>
+
+    <!-- Tabs -->
+    <section id="tabs">
+      <h2>Product Details</h2>
+      <div class="tab">
+        <button class="tablinks btn btn-info" data-tab="description">Description</button>
+        <button class="tablinks btn btn-info" data-tab="reviews">Reviews</button>
+        <button class="tablinks btn btn-info" data-tab="shipping">Shipping Info</button>
+      </div>
+      <div id="description" class="tabcontent">
+        <p id="descriptionContent">Stylish trench coat perfect for all seasons.</p>
+      </div>
+      <div id="reviews" class="tabcontent">
+        <p id="reviewsContent">"Absolutely love this trench coat! Great quality." - Jane</p>
+      </div>
+      <div id="shipping" class="tabcontent">
+        <p id="shippingContent">Ships within 3-5 business days.</p>
+      </div>
+    </section>
+
+    <!-- Form for Validation -->
+    <section id="formSection">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span id="emailFeedback"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" minlength="8" required>
+        <span id="passwordFeedback"></span>
+
+        <button type="submit" class="btn btn-success">Sign Up</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Jesse Thuranira 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
